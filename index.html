@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="signinform" action="/xulydulieu" method="post">
+        <div>
+            <label for="full-name">Fullname: </label>
+            <input name="name" value="" id="full-name" type="text" placeholder="Lastname">
+        </div>
+        <div>
+            <label for="e-mail">Your Email: </label>
+            <input name="email" value="" id="e-mail" type="email" placeholder="Email">
+        </div>  
+        
+        <div>
+            <label for="pws">Your Password: </label>
+            <input name="passwork" value="" id="psw" type="password" placeholder="Password">
+        </div> 
+        
+
+        <div>
+            <p>Gender</p>
+            <label for="male">Male</label>
+            <input name="gender" id="male" value="Male" type="radio">
+            <label for="famale">Famale</label>
+            <input name="gender" id="famale" value="Male" type="radio">
+        </div>
+        <div>
+            <label for="bd"></label>
+            <input name="birthday" id="bd" value="" type="date">
+        </div>
+
+        <div>
+            
+            <input name="football" value="" type="checkbox"> Football
+            <input name="music" value="" type="checkbox"> Music
+        </div>
+        <div>
+            <p>City</p>
+            <select name="city" id="">
+                <option value="hanoi">Ha Noi</option>
+                <option value="hochiminh">Ho Chi Minh</option>
+            </select>
+        </div>
+
+        <div>
+            <input type="submit">
+            <input type="reset">
+        </div>
+    </form>
+</body>
+</html>
