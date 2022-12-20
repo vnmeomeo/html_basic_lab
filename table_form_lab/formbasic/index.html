@@ -1,117 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tạo form đơn giản</title>
-</head>
-<body>
-    <main>
-        <header>
-            <h1>SỞ THÍCH CỦA BẠN</h1>
-        </header>
-        <section>
-
-            <form action="" method="post">
-                <div class="">
-                    <label for="your-name">
-                        <strong>Họ và tên:</strong>
-                        <input type="text" name="yourname" id="your-name" placeholder="Nhập họ và tên của bạn">
-                    </label>
-                </div>
-
-                <div class="">
-                    <label for="your-email">
-                        <strong>Email:</strong>
-                        <input type="email" name="email" id="your-email" placeholder="Nhập email của bạn">
-                    </label>
-                </div>
-
-                <div class="">
-                    <strong>Sở thích:</strong>
-
-                    <input type="checkbox" name="hobby" id="your-hobby">
-                    Thể thao
-
-                    <input type="checkbox" name="hobby" id="your-hobby">
-                    Âm nhạc
-
-                    <input type="checkbox" name="hobby" id="your-hobby">
-                    Đọc sách
-
-                    <input type="checkbox" name="hobby" id="your-hobby">
-                    Lướt web
-
-                    <input type="checkbox" name="hobby" id="your-hobby">
-                    Chơi game
-
-                    <input type="checkbox" name="hobby" id="your-hobby">
-                    Điện ảnh
-
-                    <input type="checkbox" name="hobby" id="your-hobby">
-                    Du lịch
-                </div>
-                <div class="">
-                    <button type="submit">Gửi thông tin</button>
-                    <button type="reset">Nhập lại</button>
-                </div>
-            </form>
-
-        </section>
-    </main>
-    <main>
-        <header>
-            <h1>ĐĂNG KÝ HỌC VIÊN</h1>
-        </header>
-        <section>
-            <form action="" method="get">
-                <div class="">
-                    <label for="your-name">Họ và tên:</label>
-                    <input type="text" name="yourname" id="your-name" placeholder="Nhập họ và tên">
-                </div>
-    
-                <div class="">
-                    <label for="your-date-of-birth">Ngày sinh:</label>
-                    <input type="date" name="yourbirthday" id="your-date-of-birth" placeholder="Nhập họ và tên">
-                </div>
-                <div class="">
-                    <label for="gender">Giới tính:</label>
-                    <input type="radio" name="gender" id="male"> Nam
-                    <input type="radio" name="gender" id="female"> Nữ
-                </div>
-    
-                <div class="">
-                    <label for="address">Địa chỉ:</label>
-                    <textarea name="address" id="address"></textarea>
-                </div>
-    
-                <div class="">
-                    <label for="class">Lớp:</label>
-                    <select name="class" id="class">
-                        <option disable value="">--Chọn lớp--</option>
-                        <option value="html">HTML</option>
-                        <option value="css">CSS</option>
-                        <option value="java scripts">JavaScript</option>
-                    </select>
-                </div>
-    
-                <div class="">
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" id="email">
-                </div>
-    
-                <div class="">
-                    <label for="phone-no">Điện thoại:</label>
-                    <input type="number" name="phone number" id="phone-no">
-                </div>
-    
-                <div class="">
-                    <button type="submit">Đăng ký</button>
-                    <button type="reset">Nhập lại</button>
-                </div>
-            </form>
-        </section>
-    </main>
-</body>
-</html> 
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            .wufoo {
+            font-family: "Lucida Grande","Lucida Sans Unicode", Tahoma, sans-serif;
+            }
+            </style>
+    </head>
+    <body>
+        <form method="get" action="simpleform.html" class = "wufoo">
+            <h2>Order Form</h2>
+            <p>What would you like to buy?</p>
+            <select>
+                <option value="  ">A</option>
+                <option>B (+ 0.5$)</option>
+                <option>C (+ 0.5$)</option>
+            </select>
+            <p>Name <span style="color: red">*</span></p>
+            <input type="text" name="firstname" placeholder="FirstName" size="15" />
+            <input type="text" name="lastname" placeholder="LastName" size="15" />
+            <p>Email</p>
+            <input type="text" name="email" size="35" />
+            <p>Phone Number</p>
+            <input type="text" name="phone1" size="5" /> -
+            <input type="text" name="phone2" size="5" /> -
+            <input type="text" name="phone3" size="5" />
+            <p><input type = "button" name="btSubmit" value="Submit"/></p>
+        </form>
+    </body>
+</html>
